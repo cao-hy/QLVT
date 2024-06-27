@@ -350,9 +350,11 @@
             // 
             // tableCell1
             // 
+            this.tableCell1.BackColor = System.Drawing.Color.Teal;
             this.tableCell1.Dpi = 254F;
             this.tableCell1.Name = "tableCell1";
             this.tableCell1.StyleName = "GroupCaption1";
+            this.tableCell1.StylePriority.UseBackColor = false;
             this.tableCell1.StylePriority.UseTextAlignment = false;
             this.tableCell1.Text = "Tháng :";
             this.tableCell1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -360,11 +362,13 @@
             // 
             // tableCell2
             // 
+            this.tableCell2.BackColor = System.Drawing.Color.Teal;
             this.tableCell2.Dpi = 254F;
             this.tableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Thang]")});
             this.tableCell2.Name = "tableCell2";
             this.tableCell2.StyleName = "GroupData1";
+            this.tableCell2.StylePriority.UseBackColor = false;
             this.tableCell2.Weight = 0.9165028631951655D;
             // 
             // GroupHeader2
@@ -403,10 +407,12 @@
             // 
             // tableCell3
             // 
+            this.tableCell3.BackColor = System.Drawing.Color.Teal;
             this.tableCell3.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.tableCell3.Dpi = 254F;
             this.tableCell3.Name = "tableCell3";
             this.tableCell3.StyleName = "DetailCaption1";
+            this.tableCell3.StylePriority.UseBackColor = false;
             this.tableCell3.StylePriority.UseBorders = false;
             this.tableCell3.StylePriority.UseTextAlignment = false;
             this.tableCell3.Text = "Ngày";
@@ -415,9 +421,11 @@
             // 
             // tableCell4
             // 
+            this.tableCell4.BackColor = System.Drawing.Color.Teal;
             this.tableCell4.Dpi = 254F;
             this.tableCell4.Name = "tableCell4";
             this.tableCell4.StyleName = "DetailCaption1";
+            this.tableCell4.StylePriority.UseBackColor = false;
             this.tableCell4.StylePriority.UseTextAlignment = false;
             this.tableCell4.Text = "Số Phiếu";
             this.tableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -425,9 +433,11 @@
             // 
             // tableCell5
             // 
+            this.tableCell5.BackColor = System.Drawing.Color.Teal;
             this.tableCell5.Dpi = 254F;
             this.tableCell5.Name = "tableCell5";
             this.tableCell5.StyleName = "DetailCaption1";
+            this.tableCell5.StylePriority.UseBackColor = false;
             this.tableCell5.StylePriority.UseTextAlignment = false;
             this.tableCell5.Text = "Loại Phiếu";
             this.tableCell5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -435,9 +445,11 @@
             // 
             // tableCell6
             // 
+            this.tableCell6.BackColor = System.Drawing.Color.Teal;
             this.tableCell6.Dpi = 254F;
             this.tableCell6.Name = "tableCell6";
             this.tableCell6.StyleName = "DetailCaption1";
+            this.tableCell6.StylePriority.UseBackColor = false;
             this.tableCell6.StylePriority.UseTextAlignment = false;
             this.tableCell6.Text = "Khách hàng";
             this.tableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -445,9 +457,11 @@
             // 
             // tableCell7
             // 
+            this.tableCell7.BackColor = System.Drawing.Color.Teal;
             this.tableCell7.Dpi = 254F;
             this.tableCell7.Name = "tableCell7";
             this.tableCell7.StyleName = "DetailCaption1";
+            this.tableCell7.StylePriority.UseBackColor = false;
             this.tableCell7.StylePriority.UseTextAlignment = false;
             this.tableCell7.Text = "Tên Vật Tư";
             this.tableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -455,9 +469,11 @@
             // 
             // tableCell8
             // 
+            this.tableCell8.BackColor = System.Drawing.Color.Teal;
             this.tableCell8.Dpi = 254F;
             this.tableCell8.Name = "tableCell8";
             this.tableCell8.StyleName = "DetailCaption1";
+            this.tableCell8.StylePriority.UseBackColor = false;
             this.tableCell8.StylePriority.UseTextAlignment = false;
             this.tableCell8.Text = "Số Lượng";
             this.tableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -465,9 +481,11 @@
             // 
             // tableCell9
             // 
+            this.tableCell9.BackColor = System.Drawing.Color.Teal;
             this.tableCell9.Dpi = 254F;
             this.tableCell9.Name = "tableCell9";
             this.tableCell9.StyleName = "DetailCaption1";
+            this.tableCell9.StylePriority.UseBackColor = false;
             this.tableCell9.StylePriority.UseTextAlignment = false;
             this.tableCell9.Text = "Đơn giá";
             this.tableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -475,9 +493,11 @@
             // 
             // tableCell10
             // 
+            this.tableCell10.BackColor = System.Drawing.Color.Teal;
             this.tableCell10.Dpi = 254F;
             this.tableCell10.Name = "tableCell10";
             this.tableCell10.StyleName = "DetailCaption1";
+            this.tableCell10.StylePriority.UseBackColor = false;
             this.tableCell10.StylePriority.UseTextAlignment = false;
             this.tableCell10.Text = "Trị Giá";
             this.tableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -611,7 +631,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.DarkOrange;
             this.panel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable1,
             this.label4,
@@ -643,7 +663,7 @@
             // 
             // xrTableCell1
             // 
-            this.xrTableCell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xrTableCell1.BackColor = System.Drawing.Color.DarkOrange;
             this.xrTableCell1.BorderColor = System.Drawing.Color.Transparent;
             this.xrTableCell1.Dpi = 254F;
             this.xrTableCell1.ForeColor = System.Drawing.Color.Black;
@@ -659,7 +679,7 @@
             // 
             // xrTableCell2
             // 
-            this.xrTableCell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.xrTableCell2.BackColor = System.Drawing.Color.DarkOrange;
             this.xrTableCell2.BorderColor = System.Drawing.Color.Transparent;
             this.xrTableCell2.Dpi = 254F;
             this.xrTableCell2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
@@ -953,7 +973,7 @@
             this.GrandTotalData1,
             this.GrandTotalBackground1,
             this.PageInfo});
-            this.Version = "23.2";
+            this.Version = "24.1";
             ((System.ComponentModel.ISupportInitialize)(this.table1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).EndInit();

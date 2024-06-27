@@ -32,7 +32,7 @@ namespace QLVT
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormChinh));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.btnNhanVien = new DevExpress.XtraBars.BarButtonItem();
+            this.plus = new DevExpress.XtraBars.BarButtonItem();
             this.btnVatTu = new DevExpress.XtraBars.BarButtonItem();
             this.btnKho = new DevExpress.XtraBars.BarButtonItem();
             this.btnDonHang = new DevExpress.XtraBars.BarButtonItem();
@@ -80,10 +80,12 @@ namespace QLVT
             // 
             // ribbon
             // 
+            this.ribbon.BackColor = System.Drawing.Color.Cornsilk;
+            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(26, 24, 26, 24);
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
-            this.btnNhanVien,
+            this.plus,
             this.btnVatTu,
             this.btnKho,
             this.btnDonHang,
@@ -108,29 +110,30 @@ namespace QLVT
             this.btnPhieuXuat,
             this.btnLapTaiKhoan});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.Margin = new System.Windows.Forms.Padding(6);
+            this.ribbon.Margin = new System.Windows.Forms.Padding(5);
             this.ribbon.MaxItemId = 28;
             this.ribbon.Name = "ribbon";
+            this.ribbon.OptionsMenuMinWidth = 283;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.pageNhapXuat,
             this.pageBaoCao,
             this.pageHeThong});
-            this.ribbon.Size = new System.Drawing.Size(1598, 193);
+            this.ribbon.Size = new System.Drawing.Size(1186, 158);
             // 
-            // btnNhanVien
+            // plus
             // 
-            this.btnNhanVien.Caption = "NHÂN VIÊN";
-            this.btnNhanVien.Id = 1;
-            this.btnNhanVien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNhanVien.ImageOptions.SvgImage")));
-            this.btnNhanVien.LargeWidth = 100;
-            this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNhanVien_ItemClick);
+            this.plus.Caption = "NHÂN VIÊN";
+            this.plus.Id = 1;
+            this.plus.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("plus.ImageOptions.LargeImage")));
+            this.plus.LargeWidth = 100;
+            this.plus.Name = "plus";
+            this.plus.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNhanVien_ItemClick);
             // 
             // btnVatTu
             // 
             this.btnVatTu.Caption = "VẬT TƯ";
             this.btnVatTu.Id = 2;
-            this.btnVatTu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnVatTu.ImageOptions.SvgImage")));
+            this.btnVatTu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnVatTu.ImageOptions.LargeImage")));
             this.btnVatTu.LargeWidth = 100;
             this.btnVatTu.Name = "btnVatTu";
             this.btnVatTu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVatTu_ItemClick);
@@ -139,7 +142,7 @@ namespace QLVT
             // 
             this.btnKho.Caption = "KHO HÀNG";
             this.btnKho.Id = 3;
-            this.btnKho.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnKho.ImageOptions.SvgImage")));
+            this.btnKho.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKho.ImageOptions.LargeImage")));
             this.btnKho.LargeWidth = 100;
             this.btnKho.Name = "btnKho";
             this.btnKho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKho_ItemClick);
@@ -153,7 +156,7 @@ namespace QLVT
             // 
             this.btnDanhSachNhanVien.Caption = "DANH SÁCH NHÂN VIÊN";
             this.btnDanhSachNhanVien.Id = 5;
-            this.btnDanhSachNhanVien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDanhSachNhanVien.ImageOptions.SvgImage")));
+            this.btnDanhSachNhanVien.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDanhSachNhanVien.ImageOptions.LargeImage")));
             this.btnDanhSachNhanVien.LargeWidth = 100;
             this.btnDanhSachNhanVien.Name = "btnDanhSachNhanVien";
             this.btnDanhSachNhanVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDanhSachNhanVien_ItemClick);
@@ -162,7 +165,7 @@ namespace QLVT
             // 
             this.btnDanhSachVatTu.Caption = "DANH SÁCH VẬT TƯ";
             this.btnDanhSachVatTu.Id = 6;
-            this.btnDanhSachVatTu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDanhSachVatTu.ImageOptions.SvgImage")));
+            this.btnDanhSachVatTu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDanhSachVatTu.ImageOptions.LargeImage")));
             this.btnDanhSachVatTu.LargeWidth = 100;
             this.btnDanhSachVatTu.Name = "btnDanhSachVatTu";
             this.btnDanhSachVatTu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDanhSachVatTu_ItemClick);
@@ -171,7 +174,7 @@ namespace QLVT
             // 
             this.btnChiTietNhapXuat.Caption = "CHI TIẾT NHẬP XUẤT";
             this.btnChiTietNhapXuat.Id = 7;
-            this.btnChiTietNhapXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnChiTietNhapXuat.ImageOptions.SvgImage")));
+            this.btnChiTietNhapXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnChiTietNhapXuat.ImageOptions.LargeImage")));
             this.btnChiTietNhapXuat.LargeWidth = 100;
             this.btnChiTietNhapXuat.Name = "btnChiTietNhapXuat";
             this.btnChiTietNhapXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChiTietNhapXuat_ItemClick);
@@ -180,7 +183,7 @@ namespace QLVT
             // 
             this.btnDonHangKhongPhieuNhap.Caption = "ĐƠN HÀNG KHÔNG PHIẾU NHẬP";
             this.btnDonHangKhongPhieuNhap.Id = 8;
-            this.btnDonHangKhongPhieuNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDonHangKhongPhieuNhap.ImageOptions.SvgImage")));
+            this.btnDonHangKhongPhieuNhap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDonHangKhongPhieuNhap.ImageOptions.LargeImage")));
             this.btnDonHangKhongPhieuNhap.LargeWidth = 100;
             this.btnDonHangKhongPhieuNhap.Name = "btnDonHangKhongPhieuNhap";
             this.btnDonHangKhongPhieuNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDonHangKhongPhieuNhap_ItemClick);
@@ -189,7 +192,7 @@ namespace QLVT
             // 
             this.btnHoatDongNhanVien.Caption = "HOẠT ĐỒNG NHÂN VIÊN";
             this.btnHoatDongNhanVien.Id = 9;
-            this.btnHoatDongNhanVien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHoatDongNhanVien.ImageOptions.SvgImage")));
+            this.btnHoatDongNhanVien.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHoatDongNhanVien.ImageOptions.LargeImage")));
             this.btnHoatDongNhanVien.LargeWidth = 100;
             this.btnHoatDongNhanVien.Name = "btnHoatDongNhanVien";
             this.btnHoatDongNhanVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHoatDongNhanVien_ItemClick);
@@ -198,7 +201,7 @@ namespace QLVT
             // 
             this.btnTongHopNhapXuat.Caption = "TỔNG HỢP NHẬP XUẤT";
             this.btnTongHopNhapXuat.Id = 10;
-            this.btnTongHopNhapXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTongHopNhapXuat.ImageOptions.SvgImage")));
+            this.btnTongHopNhapXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTongHopNhapXuat.ImageOptions.LargeImage")));
             this.btnTongHopNhapXuat.LargeWidth = 100;
             this.btnTongHopNhapXuat.Name = "btnTongHopNhapXuat";
             this.btnTongHopNhapXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTongHopNhapXuat_ItemClick);
@@ -222,7 +225,7 @@ namespace QLVT
             this.btnDangXuat.Caption = "ĐĂNG XUẤT";
             this.btnDangXuat.Enabled = false;
             this.btnDangXuat.Id = 13;
-            this.btnDangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangXuat.ImageOptions.SvgImage")));
+            this.btnDangXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.ImageOptions.LargeImage")));
             this.btnDangXuat.LargeWidth = 100;
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
@@ -231,7 +234,7 @@ namespace QLVT
             // 
             this.btnDangNhap.Caption = "ĐĂNG NHẬP";
             this.btnDangNhap.Id = 14;
-            this.btnDangNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangNhap.ImageOptions.SvgImage")));
+            this.btnDangNhap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.ImageOptions.LargeImage")));
             this.btnDangNhap.LargeWidth = 100;
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangNhap_ItemClick);
@@ -240,7 +243,7 @@ namespace QLVT
             // 
             this.btnThoat.Caption = "THOÁT";
             this.btnThoat.Id = 15;
-            this.btnThoat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThoat.ImageOptions.SvgImage")));
+            this.btnThoat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThoat.ImageOptions.LargeImage")));
             this.btnThoat.LargeWidth = 100;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
@@ -271,7 +274,7 @@ namespace QLVT
             // 
             this.btnMENU.Caption = "LẬP PHIẾU";
             this.btnMENU.Id = 22;
-            this.btnMENU.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnMENU.ImageOptions.SvgImage")));
+            this.btnMENU.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMENU.ImageOptions.LargeImage")));
             this.btnMENU.LargeWidth = 100;
             this.btnMENU.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDonDatHang),
@@ -283,7 +286,7 @@ namespace QLVT
             // 
             this.btnDonDatHang.Caption = "Đơn Đặt Hàng";
             this.btnDonDatHang.Id = 24;
-            this.btnDonDatHang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDonDatHang.ImageOptions.SvgImage")));
+            this.btnDonDatHang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDonDatHang.ImageOptions.Image")));
             this.btnDonDatHang.Name = "btnDonDatHang";
             this.btnDonDatHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDonDatHang_ItemClick);
             // 
@@ -291,7 +294,7 @@ namespace QLVT
             // 
             this.btnPhieuNhap.Caption = "Phiếu Nhập";
             this.btnPhieuNhap.Id = 25;
-            this.btnPhieuNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPhieuNhap.ImageOptions.SvgImage")));
+            this.btnPhieuNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhieuNhap.ImageOptions.Image")));
             this.btnPhieuNhap.Name = "btnPhieuNhap";
             this.btnPhieuNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhieuNhap_ItemClick);
             // 
@@ -299,7 +302,7 @@ namespace QLVT
             // 
             this.btnPhieuXuat.Caption = "Phiếu Xuất";
             this.btnPhieuXuat.Id = 26;
-            this.btnPhieuXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPhieuXuat.ImageOptions.SvgImage")));
+            this.btnPhieuXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhieuXuat.ImageOptions.Image")));
             this.btnPhieuXuat.Name = "btnPhieuXuat";
             this.btnPhieuXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhieuXuat_ItemClick);
             // 
@@ -314,7 +317,7 @@ namespace QLVT
             this.btnLapTaiKhoan.Caption = "TẠO TÀI KHOẢN";
             this.btnLapTaiKhoan.Enabled = false;
             this.btnLapTaiKhoan.Id = 27;
-            this.btnLapTaiKhoan.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLapTaiKhoan.ImageOptions.SvgImage")));
+            this.btnLapTaiKhoan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnLapTaiKhoan.ImageOptions.LargeImage")));
             this.btnLapTaiKhoan.LargeWidth = 100;
             this.btnLapTaiKhoan.Name = "btnLapTaiKhoan";
             this.btnLapTaiKhoan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLapTaiKhoan_ItemClick);
@@ -329,7 +332,7 @@ namespace QLVT
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnNhanVien);
+            this.ribbonPageGroup1.ItemLinks.Add(this.plus);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnVatTu);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnKho);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnMENU);
@@ -377,6 +380,8 @@ namespace QLVT
             // 
             // panelInfo
             // 
+            this.panelInfo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelInfo.Appearance.Options.UseBackColor = true;
             this.panelInfo.Controls.Add(this.txtServer);
             this.panelInfo.Controls.Add(this.txtVaiTro);
             this.panelInfo.Controls.Add(this.txtHoTen);
@@ -385,98 +390,110 @@ namespace QLVT
             this.panelInfo.Controls.Add(this.labelControl3);
             this.panelInfo.Controls.Add(this.labelControl2);
             this.panelInfo.Controls.Add(this.labelControl1);
-            this.panelInfo.Location = new System.Drawing.Point(1280, 72);
+            this.panelInfo.Location = new System.Drawing.Point(913, 60);
+            this.panelInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(318, 121);
+            this.panelInfo.Size = new System.Drawing.Size(273, 98);
             this.panelInfo.TabIndex = 6;
             this.panelInfo.Visible = false;
+            this.panelInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInfo_Paint);
             // 
             // txtServer
             // 
             this.txtServer.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtServer.Appearance.Options.UseFont = true;
-            this.txtServer.Location = new System.Drawing.Point(117, 86);
+            this.txtServer.Location = new System.Drawing.Point(100, 70);
+            this.txtServer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(0, 18);
+            this.txtServer.Size = new System.Drawing.Size(0, 14);
             this.txtServer.TabIndex = 14;
             // 
             // txtVaiTro
             // 
             this.txtVaiTro.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtVaiTro.Appearance.Options.UseFont = true;
-            this.txtVaiTro.Location = new System.Drawing.Point(117, 62);
+            this.txtVaiTro.Location = new System.Drawing.Point(100, 50);
+            this.txtVaiTro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtVaiTro.Name = "txtVaiTro";
-            this.txtVaiTro.Size = new System.Drawing.Size(0, 18);
+            this.txtVaiTro.Size = new System.Drawing.Size(0, 14);
             this.txtVaiTro.TabIndex = 13;
             // 
             // txtHoTen
             // 
             this.txtHoTen.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtHoTen.Appearance.Options.UseFont = true;
-            this.txtHoTen.Location = new System.Drawing.Point(117, 38);
+            this.txtHoTen.Location = new System.Drawing.Point(100, 31);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(0, 18);
+            this.txtHoTen.Size = new System.Drawing.Size(0, 14);
             this.txtHoTen.TabIndex = 12;
             // 
             // txtMaNV
             // 
             this.txtMaNV.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtMaNV.Appearance.Options.UseFont = true;
-            this.txtMaNV.Location = new System.Drawing.Point(117, 14);
+            this.txtMaNV.Location = new System.Drawing.Point(100, 11);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(0, 18);
+            this.txtMaNV.Size = new System.Drawing.Size(0, 14);
             this.txtMaNV.TabIndex = 11;
             this.txtMaNV.UseWaitCursor = true;
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(5, 86);
+            this.labelControl4.Location = new System.Drawing.Point(4, 70);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(57, 18);
+            this.labelControl4.Size = new System.Drawing.Size(52, 14);
             this.labelControl4.TabIndex = 10;
-            this.labelControl4.Text = "Server : ";
+            this.labelControl4.Text = "SERVER:";
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(5, 62);
+            this.labelControl3.Location = new System.Drawing.Point(4, 50);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(62, 18);
+            this.labelControl3.Size = new System.Drawing.Size(55, 14);
             this.labelControl3.TabIndex = 9;
-            this.labelControl3.Text = "Vai Trò : ";
+            this.labelControl3.Text = "VAI TRÒ:";
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(5, 38);
+            this.labelControl2.Location = new System.Drawing.Point(4, 31);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(85, 18);
+            this.labelControl2.Size = new System.Drawing.Size(69, 14);
             this.labelControl2.TabIndex = 8;
-            this.labelControl2.Text = "Họ và Tên : ";
+            this.labelControl2.Text = "HỌ VÀ TÊN:";
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(5, 14);
+            this.labelControl1.Location = new System.Drawing.Point(4, 11);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(106, 18);
+            this.labelControl1.Size = new System.Drawing.Size(94, 14);
             this.labelControl1.TabIndex = 7;
-            this.labelControl1.Text = "Mã Nhân Viên : ";
+            this.labelControl1.Text = "MÃ NHÂN VIÊN:";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // FormChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1598, 884);
+            this.ClientSize = new System.Drawing.Size(1186, 639);
             this.Controls.Add(this.panelInfo);
             this.Controls.Add(this.ribbon);
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FormChinh.IconOptions.Image")));
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormChinh";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -497,7 +514,7 @@ namespace QLVT
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
         private DevExpress.XtraBars.Ribbon.RibbonPage pageNhapXuat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem btnNhanVien;
+        private DevExpress.XtraBars.BarButtonItem plus;
         private DevExpress.XtraBars.BarButtonItem btnVatTu;
         private DevExpress.XtraBars.BarButtonItem btnKho;
         private DevExpress.XtraBars.BarButtonItem btnDonHang;

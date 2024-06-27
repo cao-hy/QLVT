@@ -360,5 +360,15 @@ namespace QLVT
                 form.Show();
             }
         }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelInfo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

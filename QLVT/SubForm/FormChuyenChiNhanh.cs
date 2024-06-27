@@ -33,7 +33,7 @@ namespace QLVT.SubForm
             cmbChiNhanh.DataSource = dataView;
             cmbChiNhanh.DisplayMember = "tencn";
             cmbChiNhanh.ValueMember = "tenserver";
-            //cmbChiNhanh.SelectedIndex = Program.brand;
+           // cmbChiNhanh.SelectedIndex = Program.brand;
         }
         private Form CheckExists(Type ftype)
         {
@@ -90,6 +90,9 @@ namespace QLVT.SubForm
 
         }
 
-        
+        private void cmbChiNhanh_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

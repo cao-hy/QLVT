@@ -39,9 +39,9 @@ namespace QLVT.SubForm
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(100, 39);
+            this.label1.Location = new System.Drawing.Point(86, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(300, 33);
+            this.label1.Size = new System.Drawing.Size(244, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "CHUYỂN CHI NHÁNH";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -50,19 +50,22 @@ namespace QLVT.SubForm
             // 
             this.cmbChiNhanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbChiNhanh.FormattingEnabled = true;
-            this.cmbChiNhanh.Location = new System.Drawing.Point(106, 109);
+            this.cmbChiNhanh.Location = new System.Drawing.Point(91, 89);
+            this.cmbChiNhanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbChiNhanh.Name = "cmbChiNhanh";
-            this.cmbChiNhanh.Size = new System.Drawing.Size(294, 24);
+            this.cmbChiNhanh.Size = new System.Drawing.Size(253, 21);
             this.cmbChiNhanh.TabIndex = 4;
+            this.cmbChiNhanh.SelectedIndexChanged += new System.EventHandler(this.cmbChiNhanh_SelectedIndexChanged_1);
             // 
             // btnXACNHAN
             // 
             this.btnXACNHAN.BackColor = System.Drawing.Color.Blue;
             this.btnXACNHAN.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnXACNHAN.ForeColor = System.Drawing.Color.White;
-            this.btnXACNHAN.Location = new System.Drawing.Point(106, 190);
+            this.btnXACNHAN.Location = new System.Drawing.Point(91, 154);
+            this.btnXACNHAN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXACNHAN.Name = "btnXACNHAN";
-            this.btnXACNHAN.Size = new System.Drawing.Size(136, 35);
+            this.btnXACNHAN.Size = new System.Drawing.Size(117, 28);
             this.btnXACNHAN.TabIndex = 5;
             this.btnXACNHAN.Text = "XÁC NHẬN";
             this.btnXACNHAN.UseVisualStyleBackColor = false;
@@ -73,22 +76,24 @@ namespace QLVT.SubForm
             this.btnTHOAT.BackColor = System.Drawing.Color.Red;
             this.btnTHOAT.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnTHOAT.ForeColor = System.Drawing.Color.White;
-            this.btnTHOAT.Location = new System.Drawing.Point(264, 190);
+            this.btnTHOAT.Location = new System.Drawing.Point(226, 154);
+            this.btnTHOAT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTHOAT.Name = "btnTHOAT";
-            this.btnTHOAT.Size = new System.Drawing.Size(136, 35);
+            this.btnTHOAT.Size = new System.Drawing.Size(117, 28);
             this.btnTHOAT.TabIndex = 6;
             this.btnTHOAT.Text = "THOÁT";
             this.btnTHOAT.UseVisualStyleBackColor = false;
             // 
             // FormChuyenChiNhanh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 285);
+            this.ClientSize = new System.Drawing.Size(430, 232);
             this.Controls.Add(this.btnTHOAT);
             this.Controls.Add(this.btnXACNHAN);
             this.Controls.Add(this.cmbChiNhanh);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormChuyenChiNhanh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chuyển Chi Nhánh";

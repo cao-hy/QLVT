@@ -170,6 +170,7 @@ namespace QLVT
 
             Program.formChinh.txtMaNV.Text = Program.userName;
             Program.formChinh.txtHoTen.Text = Program.staff;
+
             Program.formChinh.txtVaiTro.Text = Program.role;
             Program.formChinh.txtServer.Text = Program.serverName;
             Program.formChinh.panelInfo.Visible = true;

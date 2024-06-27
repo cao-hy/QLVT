@@ -44,54 +44,59 @@ namespace QLVT
             // 
             this.cmbChiNhanh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbChiNhanh.FormattingEnabled = true;
-            this.cmbChiNhanh.Location = new System.Drawing.Point(149, 68);
+            this.cmbChiNhanh.Location = new System.Drawing.Point(143, 55);
+            this.cmbChiNhanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbChiNhanh.Name = "cmbChiNhanh";
-            this.cmbChiNhanh.Size = new System.Drawing.Size(256, 24);
+            this.cmbChiNhanh.Size = new System.Drawing.Size(220, 21);
             this.cmbChiNhanh.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 7.8F);
-            this.label1.Location = new System.Drawing.Point(39, 68);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(36, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 16);
+            this.label1.Size = new System.Drawing.Size(72, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "CHI NHÁNH";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 111);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(36, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 17);
+            this.label2.Size = new System.Drawing.Size(69, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "TÀI KHOẢN";
             // 
             // txtTAIKHOAN
             // 
-            this.txtTAIKHOAN.Location = new System.Drawing.Point(149, 111);
+            this.txtTAIKHOAN.Location = new System.Drawing.Point(143, 90);
+            this.txtTAIKHOAN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTAIKHOAN.Name = "txtTAIKHOAN";
-            this.txtTAIKHOAN.Size = new System.Drawing.Size(256, 23);
+            this.txtTAIKHOAN.Size = new System.Drawing.Size(220, 21);
             this.txtTAIKHOAN.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 159);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(38, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 17);
+            this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "MẬT KHẨU";
             // 
             // btnDANGNHAP
             // 
-            this.btnDANGNHAP.BackColor = System.Drawing.Color.Blue;
+            this.btnDANGNHAP.BackColor = System.Drawing.Color.CadetBlue;
             this.btnDANGNHAP.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnDANGNHAP.ForeColor = System.Drawing.Color.Transparent;
-            this.btnDANGNHAP.Location = new System.Drawing.Point(12, 246);
+            this.btnDANGNHAP.Location = new System.Drawing.Point(10, 200);
+            this.btnDANGNHAP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDANGNHAP.Name = "btnDANGNHAP";
-            this.btnDANGNHAP.Size = new System.Drawing.Size(195, 40);
+            this.btnDANGNHAP.Size = new System.Drawing.Size(167, 32);
             this.btnDANGNHAP.TabIndex = 6;
             this.btnDANGNHAP.Text = "ĐĂNG NHẬP";
             this.btnDANGNHAP.UseVisualStyleBackColor = false;
@@ -99,12 +104,13 @@ namespace QLVT
             // 
             // btnTHOAT
             // 
-            this.btnTHOAT.BackColor = System.Drawing.Color.Red;
+            this.btnTHOAT.BackColor = System.Drawing.Color.Salmon;
             this.btnTHOAT.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnTHOAT.ForeColor = System.Drawing.Color.White;
-            this.btnTHOAT.Location = new System.Drawing.Point(229, 246);
+            this.btnTHOAT.Location = new System.Drawing.Point(196, 200);
+            this.btnTHOAT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTHOAT.Name = "btnTHOAT";
-            this.btnTHOAT.Size = new System.Drawing.Size(195, 40);
+            this.btnTHOAT.Size = new System.Drawing.Size(167, 32);
             this.btnTHOAT.TabIndex = 7;
             this.btnTHOAT.Text = "THOÁT";
             this.btnTHOAT.UseVisualStyleBackColor = false;
@@ -112,27 +118,28 @@ namespace QLVT
             // 
             // txtMATKHAU
             // 
-            this.txtMATKHAU.Location = new System.Drawing.Point(149, 159);
+            this.txtMATKHAU.Location = new System.Drawing.Point(143, 129);
+            this.txtMATKHAU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMATKHAU.Name = "txtMATKHAU";
             this.txtMATKHAU.PasswordChar = '*';
-            this.txtMATKHAU.Size = new System.Drawing.Size(256, 23);
+            this.txtMATKHAU.Size = new System.Drawing.Size(220, 21);
             this.txtMATKHAU.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(104, 9);
+            this.label4.Location = new System.Drawing.Point(96, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(252, 33);
+            this.label4.Size = new System.Drawing.Size(200, 26);
             this.label4.TabIndex = 8;
             this.label4.Text = "QUẢN LÝ VẬT TƯ";
             // 
             // FormDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 350);
+            this.ClientSize = new System.Drawing.Size(413, 298);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnTHOAT);
             this.Controls.Add(this.btnDANGNHAP);
@@ -142,6 +149,7 @@ namespace QLVT
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbChiNhanh);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
